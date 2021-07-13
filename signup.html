@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('product_images/back1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .main {
+
+            width: 100%;
+
+
+            position: relative;
+
+        }
+
+        .siginupcard {
+
+
+            height: 600px;
+            width: 490px;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            margin: 100px auto;
+            color: #fff;
+            overflow: scroll;
+            overflow-x: hidden;
+
+        }
+
+        .siginupcard .icon {
+            color: white;
+            position: relative;
+            top: -10px;
+
+
+            text-align: center;
+        }
+
+        .siginupcard h1 {
+            position: relative;
+            top: -30px;
+            margin: 0;
+            padding: 0 0 20px;
+
+
+            text-align: center;
+            font-size: 22px;
+
+        }
+
+        .but {
+            border: none;
+            outline: none;
+            height: 40PX;
+            background: #FB2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+
+
+        }
+
+        .but:hover {
+            cursor: pointer;
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .siginupcard-body {
+            margin: 0;
+            padding: 0;
+            padding: 15px;
+        }
+
+        .siginupcard-body label {
+            color: aliceblue;
+            margin-top: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .siginupcard-body input {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+        .siginupcard-body input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+            outline: none;
+
+            color: #fff;
+            font-size: 20px;
+
+
+
+        }
+
+        .siginupcard-footer a {
+
+
+            text-decoration: none;
+            font-size: 17px;
+
+            color: darkgray;
+        }
+
+        .siginupcard-footer a:hover {
+            font-size: 14px;
+            color: #ffc107;
+        }
+
+        .siginupcard-footer p {
+            text-align: center;
+
+        }
+
+        #rememberme {
+            margin-right: 20px;
+        }
+
+        #rememberme:hover {
+            color: #ffc107;
+        }
+
+        .home {
+            float: Right;
+            margin-top: -80px;
+            margin-right: 30px;
+            border: none;
+            background-color: rgba(244, 144, 137, 0.23);
+            border-radius: 20px;
+
+        }
+
+        .homeicon {
+            font-size: 40px;
+            color: #FB2525;
+
+
+        }
+
+        .homeicon:hover {
+            color: #ffc107;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="home"> <a href="home.html"> <i class="fa fa-home homeicon " aria-hidden="true"> </i></a> </button>
+
+    </div>
+
+    <div class="main">
+
+        <div class="siginupcard">
+            <p class="icon"> <span><i class="fa fa-user-circle-o" style="font-size:100px; color: red;"></i></span> </p>
+
+
+            <h1>Register Now</h1>
+
+            <div class="siginupcard-body">
+                <form method="POST" action="login.html">
+
+                    <div>
+
+                        <label for="uname">User Name</label> <br>
+
+                        <input id="uname" type="text" placeholder="User Name" required autofocus>
+                        <br><br>
+
+                    </div>
+                    <div>
+
+                        <label for="email">Email</label> <br>
+
+                        <input id="email" type="email" placeholder="Email" required autofocus>
+                        <br><br>
+
+                    </div>
+                    <div>
+                        <label for="password">Password</label> <br>
+                        <input id="password" type="password" placeholder="Password" required>
+                        <br><br>
+
+                    </div>
+                    <div>
+                        <label for="cpassword">Conform Password</label> <br>
+                        <input id="cpassword" type="password" placeholder="Conform Password" required> <br><br>
+
+                    </div>
+
+
+
+                    <div>
+                        <input type="submit" value="Register" class="but but:hover"
+                            onclick="alert('Registered Successfully')">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+        </form>
+</body>
+
+</html>

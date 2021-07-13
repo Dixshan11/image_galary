@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cardstyle {
+            width: 15rem;
+            margin: 10px;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: rgba(116, 127, 224, 0.45);
+        }
+
+        .card img {
+            height: 230px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+            
+        }
+
+        #card-container {
+            margin-top: 40px;
+            height: 67vh;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        #loginicon {
+            color: white;
+            font-size: 20px;
+        }
+
+        .footer {
+            color: white;
+            text-align: center;
+            height: 20px;
+        }
+       
+
+        .heading {
+            margin-top: 80px;
+            font-family: 'Zen Tokyo Zoo', cursive;
+        }
+
+        .footer span{
+            color: white;
+            padding-left: 0px;
+            font-size: 20px;
+            margin: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+          
+        }
+        .footer span:hover{
+            color: #ffc107;
+        }
+        .navbar-brand:hover{
+            color: crimson;
+           
+        }
+      #navbarScroll a:hover{
+         
+        background-color: rgba(56, 56, 209, 0.4);
+       }
+
+       .overlay {
+  position: absolute; 
+margin-top: 50px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: red;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar  bg-primary navbar-expand-lg navbar-dark nav-tabs fixed-top ">
+
+            <div class="col-sm-4">
+                <a class="navbar-brand" href="#">New Trends</a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galary.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="galary.html">Our works</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                </ul>
+
+                <a class="nav-link" href="login.html"> <i class="fa fa-sign-in" aria-hidden="true" id="loginicon"></i>
+                </a>
+
+
+
+            </div>
+        </nav>
+
+        <div style="text-align: center;">
+            <h1 class="heading">Our Works</h1>
+        </div>
+
+
+
+        <div class="container" id="card-container">
+
+            <div class="card cardstyle">
+                <img src="product_images/new4.jpg" class="card-img-top" alt="...">
+            
+
+            </div>
+
+            <div class="card cardstyle">
+                <img src="product_images/27.jpg" class="card-img-top " alt="...">
+                <p class="overlay " >Out Of Stock</p>
+            </div>
+
+            <div class="card cardstyle">
+                <img src="product_images/28.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/30.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/kids o3.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/ladies 2.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/ladies02.jpeg" class="card-img-top" alt="...">
+
+            </div>
+
+            <div class="card cardstyle">
+                <img src="product_images/new2.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+            <div class="card  cardstyle ">
+                <img src="product_images/new3.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+            <div class="card   cardstyle">
+                <img src="product_images/30.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+
+            <div class="card cardstyle">
+                <img src="product_images/new5.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+
+            <div class="card cardstyle">
+                <img src="product_images/nwe1.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/30.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/new4.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/25.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/27.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card cardstyle">
+                <img src="product_images/24.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card  cardstyle ">
+                <img src="product_images/new3.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+
+            <div class="card  cardstyle ">
+                <img src="product_images/new3.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+          
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <nav class="navbar  fixed-bottom bg-primary navbar-expand-lg navbar-dark ">
+        <div style="width: 100%;" >
+            <p class="footer" style="margin-top: 10px;">New Trends.lk
+                 <span>    <i class="fa fa-facebook-official" aria-hidden="true" ></i></span> 
+                 <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                </p>
+            
+        </div>
+        <div>
+        
+        </div>
+
+    </nav>
+    </div>
+
+
+</body>
+
+</html>
